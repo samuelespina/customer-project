@@ -1,3 +1,4 @@
+import React from "react";
 import { StatProps } from "./Stat.types";
 
 const Stat = (props: StatProps) => {
