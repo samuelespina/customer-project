@@ -1,0 +1,81 @@
+.navbar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: blue;
+  z-index: 2;
+
+  .navbar {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, auto);
+    align-items: end;
+    height: 100%;
+    width: 100%;
+
+    .link {
+      width: 100%;
+      text-align: center;
+      transition: all 0.4s ease-in-out;
+      &:hover {
+        color: white;
+        cursor: pointer;
+      }
+    }
+    .link.discord {
+      width: 9rem;
+      border-radius: 3rem;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        -webkit-box-shadow: 0px 0px 11px -1px #000000;
+        box-shadow: 0px 0px 11px -1px #000000;
+        color: black;
+      }
+    }
+
+    .subline {
+      width: 2.5rem; // più è alta la width e più la casella soprastante si allarga
+      height: 4px;
+      border-radius: 1rem;
+      background-color: red;
+      margin: auto;
+      position: relative;
+      top: -0.8rem;
+      transition: all 0.6s ease-in-out;
+
+      &.link2 {
+        background-color: black;
+        transform: translateX(+ calc(100vw / 8));
+      }
+
+      &.link3 {
+        background-color: green;
+        transform: translateX(calc(100vw / 8) * 2);
+      }
+      &.link4 {
+        background-color: yellow;
+        transform: translateX(calc(100vw / 8) * 3);
+      }
+      &.link5 {
+        background-color: white;
+        transform: translateX(calc(100vw / 8) * 4);
+      }
+      &.link6 {
+        background-color: violet;
+        transform: translateX(calc(100vw / 8) * 5);
+      }
+      &.link7 {
+        background-color: pink;
+        transform: translateX(calc(100vw / 8) * 6);
+      }
+    }
+  }
+}

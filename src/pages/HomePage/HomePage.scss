@@ -1,0 +1,328 @@
+.homepage {
+  height: auto;
+
+  .hero-wrapper {
+    margin-top: 1rem;
+    height: 86vh;
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 5rem;
+      -webkit-box-shadow: 0px 0px 17px -6px #000000;
+      box-shadow: 0px 0px 17px -6px #000000;
+
+      .presentation {
+        width: 50%;
+        height: auto;
+        margin-left: 2rem;
+      }
+
+      .parallax {
+        margin: 2rem 3rem 0 0;
+
+        .div1,
+        .div2,
+        .div3 {
+          width: 13rem;
+          aspect-ratio: 1/1;
+          border: 1px solid green;
+          position: relative;
+          border-radius: 2rem;
+          border: 2px solid white;
+          transform: translate3d(0px, 0px, 0px) rotate(0.0001deg);
+          transform-style: preserve-3d;
+        }
+
+        .div1 {
+          background-color: red;
+        }
+
+        .div2 {
+          background-color: green;
+        }
+        .div3 {
+          background-color: yellow;
+          z-index: -1;
+        }
+      }
+    }
+  }
+  .stats-wrapper {
+    width: 100vw;
+    height: auto;
+    margin-top: 15rem;
+    .stats {
+      width: 100vw;
+      height: auto;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
+
+  .story-wrapper {
+    margin: 10rem auto 0 auto;
+    width: 85vw;
+    height: auto;
+    text-align: center;
+
+    .story-title {
+      position: relative;
+      top: 4.5rem;
+      z-index: -1;
+      color: red;
+      opacity: 0.7;
+      scale: 1.6;
+    }
+    .story-subtitle {
+      font-size: 2.5rem;
+
+      &::after {
+        content: "";
+        width: 5rem;
+        height: 0.3rem;
+        border-radius: 1rem;
+        background: red;
+        display: block;
+        position: relative;
+        left: 33.5rem; // come si centra bene? è mmesso come se il text alline fosse left
+      }
+    }
+
+    .story {
+      margin-top: 5rem;
+      width: 100%;
+      height: 35rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 2rem;
+      -webkit-box-shadow: 0px 0px 17px -6px #000000;
+      box-shadow: 0px 0px 17px -6px #000000;
+
+      .nft-hover {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+        width: 45%;
+        border-radius: 2rem 0 0 2rem;
+
+        .nft-hover1,
+        .nft-hover2 {
+          width: 12rem;
+          aspect-ratio: 1/1;
+          border: 5px solid white;
+          position: relative;
+          border-radius: 2rem;
+          transition: all 0.2s ease-in-out;
+        }
+
+        .nft-hover1 {
+          background-color: yellow;
+          transform: rotate(-20deg);
+          top: 1rem;
+          left: 1rem;
+
+          &:hover {
+            scale: 1.1;
+            z-index: 3;
+            transform: rotate(-25deg);
+          }
+        }
+
+        .nft-hover2 {
+          background-color: blue;
+          left: -1rem;
+          top: -1rem;
+          transform: rotate(4deg);
+
+          &:hover {
+            scale: 1.1;
+            z-index: 3;
+            transform: rotate(10deg);
+          }
+        }
+      }
+
+      .story-description {
+        height: 100%;
+        width: 55%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 2rem 2rem 0;
+
+        h1,
+        p {
+          margin: 0 3rem 0 2rem;
+        }
+
+        h1 {
+          text-align: center;
+          margin-bottom: 3rem;
+        }
+        p {
+          margin-left: 3rem;
+        }
+      }
+    }
+  }
+
+  .marquee1 {
+    margin: 5rem;
+  }
+
+  .road-map-wrapper {
+    margin: 5rem auto 5rem auto;
+    width: 60vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+
+    .roadmap-title {
+      position: relative;
+      top: 4.5rem;
+      z-index: -1;
+      color: red;
+      opacity: 0.7;
+      scale: 1.6;
+    }
+    .roadmap-subtitle {
+      font-size: 2.5rem;
+
+      &::after {
+        content: "";
+        width: 7rem;
+        height: 0.3rem;
+        border-radius: 1rem;
+        background: red;
+        display: block;
+        position: relative;
+        left: 4rem;
+      }
+    }
+
+    .road-map {
+      margin-top: 4rem;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      .step {
+        width: 100%;
+        height: 10vh;
+        margin-bottom: 1.5rem;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        -webkit-box-shadow: 0px 0px 17px -6px #000000;
+        box-shadow: 0px 0px 17px -6px #000000;
+
+        .percentage {
+          border-right: 1px solid rgb(211, 210, 210);
+          padding: 0 2rem 0 2rem;
+
+          &.last {
+            padding-right: 1.35rem; // come posso centrarlo bene senza farlo a mano?
+          }
+        }
+
+        .description {
+          padding-right: 2rem;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .faq-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    height: auto;
+    margin: 5rem auto 10rem auto;
+
+    .faq-title {
+      position: relative;
+      top: 4.5rem;
+      z-index: -1;
+      color: red;
+      opacity: 0.7;
+      scale: 1.6;
+    }
+    .faq-subtitle {
+      font-size: 2rem;
+
+      &::after {
+        content: "";
+        width: 10rem;
+        height: 0.3rem;
+        border-radius: 1rem;
+        background: red;
+        display: block;
+        position: relative;
+        left: 7rem;
+      }
+    }
+
+    .faq {
+      height: auto;
+      width: 100%;
+      margin-top: 8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      transition: all 0.5s ease-in-out;
+
+      .question-box {
+        width: 100%;
+        height: 7vh;
+        overflow-y: hidden;
+        transition: all 0.5s ease-in-out;
+        border-radius: 1rem;
+        -webkit-box-shadow: 0px 0px 17px -6px #000000;
+        box-shadow: 0px 0px 17px -6px #000000;
+        margin-bottom: 1rem;
+
+        p {
+          margin-left: 2rem;
+
+          svg {
+            position: relative;
+            top: 0.1rem;
+            margin-right: 1rem;
+            font-size: 1.2rem;
+            transition: all 0.5s ease-in-out;
+          }
+        }
+
+        &.active {
+          height: 38vh;
+          p {
+            svg {
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
