@@ -59,7 +59,10 @@ const HomePage = () => {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div className="parallax">
-            <div ref={plx_1} className="div1"></div>
+            <div ref={plx_1} className="div1">
+              {" "}
+              <img src="./images/nfts/1.png" alt="" />{" "}
+            </div>
             <div ref={plx_2} className="div2"></div>
             <div ref={plx_3} className="div3"></div>
           </div>
