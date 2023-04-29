@@ -7,7 +7,7 @@ const Footer = () => {
         <h2>Join our community</h2>
         <p>We'll be glad to have you with us, see you soon!</p>
       </div>
-      <button>join Discord!</button>
+      <button className="join">join Discord!</button>
     </footer>
   );
 };

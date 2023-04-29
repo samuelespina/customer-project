@@ -3,7 +3,7 @@
 
   .hero-wrapper {
     margin-top: 1rem;
-    height: 86vh;
+    height: auto;
 
     .hero {
       height: 100vh;
@@ -23,28 +23,24 @@
       .parallax {
         margin: 2rem 3rem 0 0;
 
-        .div1,
-        .div2,
-        .div3 {
-          width: 13rem;
+        .parallax_nft1,
+        .parallax_nft2,
+        .parallax-nft3 {
+          width: 14rem;
           aspect-ratio: 1/1;
           border: 1px solid green;
           position: relative;
           border-radius: 2rem;
-          border: 2px solid white;
-          transform: translate3d(0px, 0px, 0px) rotate(0.0001deg);
-          transform-style: preserve-3d;
-        }
+          border: 5px solid white;
+          overflow: hidden;
 
-        .div1 {
-          background-color: red;
+          img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+          }
         }
-
-        .div2 {
-          background-color: green;
-        }
-        .div3 {
-          background-color: yellow;
+        .parallax-nft3 {
           z-index: -1;
         }
       }
@@ -53,7 +49,7 @@
   .stats-wrapper {
     width: 100vw;
     height: auto;
-    margin-top: 15rem;
+    margin-top: 10rem;
     .stats {
       width: 100vw;
       height: auto;
@@ -87,8 +83,9 @@
         border-radius: 1rem;
         background: red;
         display: block;
-        position: relative;
-        left: 33.5rem; // come si centra bene? è mmesso come se il text alline fosse left
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
 
@@ -103,7 +100,7 @@
       -webkit-box-shadow: 0px 0px 17px -6px #000000;
       box-shadow: 0px 0px 17px -6px #000000;
 
-      .nft-hover {
+      .nft-hover-container {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -113,19 +110,19 @@
 
         .nft-hover1,
         .nft-hover2 {
-          width: 12rem;
+          width: 13rem;
           aspect-ratio: 1/1;
           border: 5px solid white;
           position: relative;
           border-radius: 2rem;
           transition: all 0.2s ease-in-out;
+          overflow: hidden;
         }
 
         .nft-hover1 {
-          background-color: yellow;
           transform: rotate(-20deg);
           top: 1rem;
-          left: 1rem;
+          left: 2rem;
 
           &:hover {
             scale: 1.1;
@@ -135,8 +132,7 @@
         }
 
         .nft-hover2 {
-          background-color: blue;
-          left: -1rem;
+          left: 0;
           top: -1rem;
           transform: rotate(4deg);
 
@@ -174,12 +170,59 @@
     }
   }
 
-  .marquee1 {
-    margin: 5rem;
+  .marquee-wrapper {
+    margin-top: 10rem;
+    .marquee-title {
+      position: relative;
+      top: 4.5rem;
+      z-index: -1;
+      color: red;
+      opacity: 0.7;
+      scale: 1.6;
+      text-align: center;
+    }
+    .marquee-subtitle {
+      font-size: 2.5rem;
+      text-align: center;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 7rem;
+        height: 0.3rem;
+        border-radius: 1rem;
+        background: red;
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+      }
+    }
+    .marquee-background {
+      margin-top: 5rem;
+      background-color: rgb(0, 0, 0, 0.8);
+
+      -webkit-box-shadow: 0px 0px 17px -6px #000000;
+      box-shadow: 0px 0px 70px -6px #000000;
+      .marquee {
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+
+        .marquee-container {
+          height: 33vh;
+          overflow-x: visible !important;
+
+          img {
+            margin: 0 1rem 0 1rem;
+            border-radius: 1rem;
+          }
+        }
+      }
+    }
   }
 
   .road-map-wrapper {
-    margin: 5rem auto 5rem auto;
+    margin: 10rem auto 0 auto;
     width: 60vw;
     height: auto;
     display: flex;
@@ -207,12 +250,13 @@
         background: red;
         display: block;
         position: relative;
-        left: 4rem;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
 
     .road-map {
-      margin-top: 4rem;
+      margin-top: 5rem;
       width: 100%;
       height: auto;
       display: flex;
@@ -257,7 +301,7 @@
     align-items: center;
     width: 90vw;
     height: auto;
-    margin: 5rem auto 10rem auto;
+    margin: 10rem auto 10rem auto;
 
     .faq-title {
       position: relative;
@@ -278,14 +322,15 @@
         background: red;
         display: block;
         position: relative;
-        left: 7rem;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
 
     .faq {
       height: auto;
       width: 100%;
-      margin-top: 8rem;
+      margin-top: 5rem;
       display: flex;
       flex-direction: column;
       justify-content: space-between;

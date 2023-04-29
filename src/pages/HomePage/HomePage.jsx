@@ -1,30 +1,53 @@
 "use strict";
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    var desc = Object.getOwnPropertyDescriptor(m, k);
-    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-      desc = { enumerable: true, get: function() { return m[k]; } };
-    }
-    Object.defineProperty(o, k2, desc);
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || function (mod) {
+var __createBinding =
+  (this && this.__createBinding) ||
+  (Object.create
+    ? function (o, m, k, k2) {
+        if (k2 === undefined) k2 = k;
+        var desc = Object.getOwnPropertyDescriptor(m, k);
+        if (
+          !desc ||
+          ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)
+        ) {
+          desc = {
+            enumerable: true,
+            get: function () {
+              return m[k];
+            },
+          };
+        }
+        Object.defineProperty(o, k2, desc);
+      }
+    : function (o, m, k, k2) {
+        if (k2 === undefined) k2 = k;
+        o[k2] = m[k];
+      });
+var __setModuleDefault =
+  (this && this.__setModuleDefault) ||
+  (Object.create
+    ? function (o, v) {
+        Object.defineProperty(o, "default", { enumerable: true, value: v });
+      }
+    : function (o, v) {
+        o["default"] = v;
+      });
+var __importStar =
+  (this && this.__importStar) ||
+  function (mod) {
     if (mod && mod.__esModule) return mod;
     var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    if (mod != null)
+      for (var k in mod)
+        if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k))
+          __createBinding(result, mod, k);
     __setModuleDefault(result, mod);
     return result;
-};
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
+  };
+var __importDefault =
+  (this && this.__importDefault) ||
+  function (mod) {
+    return mod && mod.__esModule ? mod : { default: mod };
+  };
 exports.__esModule = true;
 var react_1 = __importStar(require("react"));
 var components_1 = require("../../components");
@@ -33,41 +56,55 @@ var react_fast_marquee_1 = __importDefault(require("react-fast-marquee"));
 var react_fontawesome_1 = require("@fortawesome/react-fontawesome");
 var free_solid_svg_icons_1 = require("@fortawesome/free-solid-svg-icons");
 var HomePage = function () {
-    var _a = (0, react_1.useState)(0), currentX = _a[0], setCurrentX = _a[1];
-    var _b = (0, react_1.useState)(0), currentY = _b[0], setCurrentY = _b[1];
-    var plx_1 = (0, react_1.useRef)(null);
-    var plx_2 = (0, react_1.useRef)(null);
-    var plx_3 = (0, react_1.useRef)(null);
-    var faq_1 = (0, react_1.useRef)(null);
-    var faq_2 = (0, react_1.useRef)(null);
-    var faq_3 = (0, react_1.useRef)(null);
-    var faq_4 = (0, react_1.useRef)(null);
-    var faq_5 = (0, react_1.useRef)(null);
-    var faq_6 = (0, react_1.useRef)(null);
-    (0, react_1.useEffect)(function () {
-        document.addEventListener("mousemove", function (e) {
-            setCurrentX(e.clientX);
-            setCurrentY(e.clientY);
-        });
-    }, []);
-    (0, react_1.useEffect)(function () {
-        if (plx_1.current) {
-            plx_1.current.style.left = -150 - currentX / 10 + "px";
-            plx_1.current.style.top = 130 - currentY / 10 + "px";
-        }
-        if (plx_2.current) {
-            plx_2.current.style.left = -300 - currentX / 30 + "px";
-            plx_2.current.style.top = 90 - currentY / 7 + "px";
-        }
-        if (plx_3.current) {
-            plx_3.current.style.left = -50 - currentX / 15 + "px";
-            plx_3.current.style.top = -120 - currentY / 10 + "px";
-        }
-    }, [currentX, currentY, plx_1.current, plx_2.current, plx_3.current]);
-    (0, react_1.useEffect)(function () {
-        aos_1["default"].init();
-    }, []);
-    return (<div className="homepage">
+  var _a = (0, react_1.useState)(0),
+    currentX = _a[0],
+    setCurrentX = _a[1];
+  var _b = (0, react_1.useState)(0),
+    currentY = _b[0],
+    setCurrentY = _b[1];
+  var parallax_nft1 = (0, react_1.useRef)(null);
+  var parallax_nft2 = (0, react_1.useRef)(null);
+  var parallax_nft3 = (0, react_1.useRef)(null);
+  var faq_1 = (0, react_1.useRef)(null);
+  var faq_2 = (0, react_1.useRef)(null);
+  var faq_3 = (0, react_1.useRef)(null);
+  var faq_4 = (0, react_1.useRef)(null);
+  var faq_5 = (0, react_1.useRef)(null);
+  var faq_6 = (0, react_1.useRef)(null);
+  (0, react_1.useEffect)(function () {
+    document.addEventListener("mousemove", function (e) {
+      setCurrentX(e.clientX);
+      setCurrentY(e.clientY);
+    });
+  }, []);
+  (0, react_1.useEffect)(
+    function () {
+      if (parallax_nft1.current) {
+        parallax_nft1.current.style.left = -150 - currentX / 10 + "px";
+        parallax_nft1.current.style.top = 130 - currentY / 10 + "px";
+      }
+      if (parallax_nft2.current) {
+        parallax_nft2.current.style.left = -300 - currentX / 30 + "px";
+        parallax_nft2.current.style.top = 90 - currentY / 7 + "px";
+      }
+      if (parallax_nft3.current) {
+        parallax_nft3.current.style.left = -50 - currentX / 15 + "px";
+        parallax_nft3.current.style.top = -120 - currentY / 10 + "px";
+      }
+    },
+    [
+      currentX,
+      currentY,
+      parallax_nft1.current,
+      parallax_nft2.current,
+      parallax_nft3.current,
+    ]
+  );
+  (0, react_1.useEffect)(function () {
+    aos_1["default"].init();
+  }, []);
+  return (
+    <div className="homepage">
       <section className="hero-wrapper">
         <article className="hero">
           <div className="presentation">
@@ -81,18 +118,21 @@ var HomePage = function () {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div className="parallax">
-            <div ref={plx_1} className="div1"></div>
-            <div ref={plx_2} className="div2"></div>
-            <div ref={plx_3} className="div3"></div>
+            <div ref={parallax_nft1} className="parallax_nft1"></div>
+            <div ref={parallax_nft2} className="parallax_nft2"></div>
+            <div ref={parallax_nft3} className="parallax-nft3"></div>
           </div>
         </article>
       </section>
       <section className="stats-wrapper">
         <article className="stats">
-          <components_1.Stat statistics={2999} description="Total Items"/>
-          <components_1.Stat statistics={1076} description="Total Owners"/>
-          <components_1.Stat statistics={0.25} description="Floor Price (ETH)"/>
-          <components_1.Stat statistics={450000} description="Volume Traded"/>
+          <components_1.Stat statistics={2999} description="Total Items" />
+          <components_1.Stat statistics={1076} description="Total Owners" />
+          <components_1.Stat
+            statistics={0.25}
+            description="Floor Price (ETH)"
+          />
+          <components_1.Stat statistics={450000} description="Volume Traded" />
         </article>
       </section>
       <section className="story-wrapper">
@@ -174,13 +214,19 @@ var HomePage = function () {
         <h2 className="faq-subtitle">Frequently Asked Questions</h2>
 
         <article className="faq">
-          <div ref={faq_1} onClick={function () {
-            if (faq_1.current) {
+          <div
+            ref={faq_1}
+            onClick={function () {
+              if (faq_1.current) {
                 faq_1.current.classList.toggle("active");
-            }
-        }} className="question-box">
+              }
+            }}
+            className="question-box"
+          >
             <p>
-              <react_fontawesome_1.FontAwesomeIcon icon={free_solid_svg_icons_1.faChevronUp}/>
+              <react_fontawesome_1.FontAwesomeIcon
+                icon={free_solid_svg_icons_1.faChevronUp}
+              />
               What is Blue Chipmunks NFT?
             </p>
             <br />
@@ -192,12 +238,17 @@ var HomePage = function () {
             </p>
           </div>
 
-          <div ref={faq_2} onClick={function () {
-            if (faq_2.current)
-                faq_2.current.classList.toggle("active");
-        }} className="question-box">
+          <div
+            ref={faq_2}
+            onClick={function () {
+              if (faq_2.current) faq_2.current.classList.toggle("active");
+            }}
+            className="question-box"
+          >
             <p>
-              <react_fontawesome_1.FontAwesomeIcon icon={free_solid_svg_icons_1.faChevronUp}/>
+              <react_fontawesome_1.FontAwesomeIcon
+                icon={free_solid_svg_icons_1.faChevronUp}
+              />
               How Can I Use My NFT ?
             </p>
             <br />
@@ -208,13 +259,19 @@ var HomePage = function () {
               Eius quae blanditiis esse eveniet hic?
             </p>
           </div>
-          <div ref={faq_3} onClick={function () {
-            if (faq_3.current) {
+          <div
+            ref={faq_3}
+            onClick={function () {
+              if (faq_3.current) {
                 faq_3.current.classList.toggle("active");
-            }
-        }} className="question-box">
+              }
+            }}
+            className="question-box"
+          >
             <p>
-              <react_fontawesome_1.FontAwesomeIcon icon={free_solid_svg_icons_1.faChevronUp}/>
+              <react_fontawesome_1.FontAwesomeIcon
+                icon={free_solid_svg_icons_1.faChevronUp}
+              />
               Where can I View My NFTS ?
             </p>
             <br />
@@ -225,13 +282,19 @@ var HomePage = function () {
               non laboriosam harum perferendis neque nisi?
             </p>
           </div>
-          <div ref={faq_4} onClick={function () {
-            if (faq_4.current) {
+          <div
+            ref={faq_4}
+            onClick={function () {
+              if (faq_4.current) {
                 faq_4.current.classList.toggle("active");
-            }
-        }} className="question-box">
+              }
+            }}
+            className="question-box"
+          >
             <p>
-              <react_fontawesome_1.FontAwesomeIcon icon={free_solid_svg_icons_1.faChevronUp}/>
+              <react_fontawesome_1.FontAwesomeIcon
+                icon={free_solid_svg_icons_1.faChevronUp}
+              />
               How we can buy and invest NFT ?
             </p>
             <br />
@@ -242,13 +305,19 @@ var HomePage = function () {
               aspernatur repellendus cupiditate in voluptatem. Quasi!
             </p>
           </div>
-          <div ref={faq_5} onClick={function () {
-            if (faq_5.current) {
+          <div
+            ref={faq_5}
+            onClick={function () {
+              if (faq_5.current) {
                 faq_5.current.classList.toggle("active");
-            }
-        }} className="question-box">
+              }
+            }}
+            className="question-box"
+          >
             <p>
-              <react_fontawesome_1.FontAwesomeIcon icon={free_solid_svg_icons_1.faChevronUp}/>
+              <react_fontawesome_1.FontAwesomeIcon
+                icon={free_solid_svg_icons_1.faChevronUp}
+              />
               Where we can buy and sell NFts?
             </p>
             <br />
@@ -259,13 +328,19 @@ var HomePage = function () {
               consequuntur neque fugiat!
             </p>
           </div>
-          <div ref={faq_6} onClick={function () {
-            if (faq_6.current) {
+          <div
+            ref={faq_6}
+            onClick={function () {
+              if (faq_6.current) {
                 faq_6.current.classList.toggle("active");
-            }
-        }} className="question-box">
+              }
+            }}
+            className="question-box"
+          >
             <p>
-              <react_fontawesome_1.FontAwesomeIcon icon={free_solid_svg_icons_1.faChevronUp}/>
+              <react_fontawesome_1.FontAwesomeIcon
+                icon={free_solid_svg_icons_1.faChevronUp}
+              />
               Where does my NFT go after I purchase?
             </p>
             <br />
@@ -278,6 +353,7 @@ var HomePage = function () {
           </div>
         </article>
       </section>
-    </div>);
+    </div>
+  );
 };
 exports["default"] = HomePage;

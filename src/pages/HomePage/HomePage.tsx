@@ -8,9 +8,9 @@ import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 const HomePage = () => {
   const [currentX, setCurrentX] = useState<number>(0);
   const [currentY, setCurrentY] = useState<number>(0);
-  const plx_1 = useRef<HTMLInputElement>(null);
-  const plx_2 = useRef<HTMLInputElement>(null);
-  const plx_3 = useRef<HTMLInputElement>(null);
+  const parallax_nft1 = useRef<HTMLInputElement>(null);
+  const parallax_nft2 = useRef<HTMLInputElement>(null);
+  const parallax_nft3 = useRef<HTMLInputElement>(null);
   const faq_1 = useRef<HTMLInputElement>(null);
   const faq_2 = useRef<HTMLInputElement>(null);
   const faq_3 = useRef<HTMLInputElement>(null);
@@ -26,19 +26,28 @@ const HomePage = () => {
   }, []);
 
   useEffect(() => {
-    if (plx_1.current) {
-      plx_1.current.style.left = -150 - currentX / 10 + "px";
-      plx_1.current.style.top = 130 - currentY / 10 + "px";
+    if (parallax_nft1.current) {
+      parallax_nft1.current.style.transform = `translate(${
+        -150 - currentX / 10 + "px"
+      },${130 - currentY / 10 + "px"})`;
     }
-    if (plx_2.current) {
-      plx_2.current.style.left = -300 - currentX / 30 + "px";
-      plx_2.current.style.top = 90 - currentY / 7 + "px";
+    if (parallax_nft2.current) {
+      parallax_nft2.current.style.transform = `translate(${
+        -300 - currentX / 30 + "px"
+      }, ${90 - currentY / 7 + "px"})`;
     }
-    if (plx_3.current) {
-      plx_3.current.style.left = -50 - currentX / 15 + "px";
-      plx_3.current.style.top = -120 - currentY / 10 + "px";
+    if (parallax_nft3.current) {
+      parallax_nft3.current.style.transform = `translate(${
+        -50 - currentX / 15 + "px"
+      },${-120 - currentY / 10 + "px"})`;
     }
-  }, [currentX, currentY, plx_1.current, plx_2.current, plx_3.current]);
+  }, [
+    currentX,
+    currentY,
+    parallax_nft1.current,
+    parallax_nft2.current,
+    parallax_nft3.current,
+  ]);
 
   useEffect(() => {
     AOS.init();
@@ -59,12 +68,15 @@ const HomePage = () => {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <div className="parallax">
-            <div ref={plx_1} className="div1">
-              {" "}
-              <img src="./images/nfts/1.png" alt="" />{" "}
+            <div ref={parallax_nft1} className="parallax_nft1">
+              <img src="./images/nfts/1.png" alt="" />
             </div>
-            <div ref={plx_2} className="div2"></div>
-            <div ref={plx_3} className="div3"></div>
+            <div ref={parallax_nft2} className="parallax_nft2">
+              <img src="./images/nfts/19.png" alt="" />
+            </div>
+            <div ref={parallax_nft3} className="parallax-nft3">
+              <img src="./images/nfts/28.png" alt="" />
+            </div>
           </div>
         </article>
       </section>
@@ -80,9 +92,13 @@ const HomePage = () => {
         <h1 className="story-title">ABOUT US</h1>
         <h2 className="story-subtitle">our story</h2>
         <article className="story">
-          <div className="nft-hover">
-            <div className="nft-hover1"></div>
-            <div className="nft-hover2"></div>
+          <div className="nft-hover-container">
+            <div className="nft-hover1">
+              <img src="./images/nfts/7.png" alt="" />
+            </div>
+            <div className="nft-hover2">
+              <img src="./images/nfts/12.png" alt="" />
+            </div>
           </div>
           <div className="story-description">
             <h1>Where it all began</h1>
@@ -102,21 +118,80 @@ const HomePage = () => {
           </div>
         </article>
       </section>
-      <Marquee>
-        <div>
-          <p className="marquee1">ciao</p>
-        </div>
-      </Marquee>
 
-      <Marquee>
-        <div>
-          <p className="marquee2">sono</p>
+      <section className="marquee-wrapper">
+        <h1 className="marquee-title">SHOWCASE</h1>
+        <h2 className="marquee-subtitle">gallery</h2>
+        <div className="marquee-background">
+          <article className="marquee">
+            <Marquee>
+              <div className="marquee-container">
+                <img src="./images/nfts/1.png" alt="" />
+                <img src="./images/nfts/2.png" alt="" />
+                <img src="./images/nfts/3.png" alt="" />
+                <img src="./images/nfts/4.png" alt="" />
+                <img src="./images/nfts/5.png" alt="" />
+                <img src="./images/nfts/6.png" alt="" />
+                <img src="./images/nfts/7.png" alt="" />
+                <img src="./images/nfts/8.png" alt="" />
+                <img src="./images/nfts/9.png" alt="" />
+                <img src="./images/nfts/10.png" alt="" />
+                <img src="./images/nfts/11.png" alt="" />
+                <img src="./images/nfts/12.png" alt="" />
+                <img src="./images/nfts/13.png" alt="" />
+                <img src="./images/nfts/14.png" alt="" />
+                <img src="./images/nfts/15.png" alt="" />
+                <img src="./images/nfts/16.png" alt="" />
+                <img src="./images/nfts/17.png" alt="" />
+                <img src="./images/nfts/18.png" alt="" />
+                <img src="./images/nfts/19.png" alt="" />
+                <img src="./images/nfts/20.png" alt="" />
+                <img src="./images/nfts/21.png" alt="" />
+                <img src="./images/nfts/22.png" alt="" />
+                <img src="./images/nfts/23.png" alt="" />
+                <img src="./images/nfts/24.png" alt="" />
+                <img src="./images/nfts/25.png" alt="" />
+              </div>
+            </Marquee>
+          </article>
+
+          <article className="marquee">
+            <Marquee direction="right">
+              <div className="marquee-container">
+                <img src="./images/nfts/26.png" alt="" />
+                <img src="./images/nfts/27.png" alt="" />
+                <img src="./images/nfts/28.png" alt="" />
+                <img src="./images/nfts/29.png" alt="" />
+                <img src="./images/nfts/30.png" alt="" />
+                <img src="./images/nfts/31.png" alt="" />
+                <img src="./images/nfts/32.png" alt="" />
+                <img src="./images/nfts/33.png" alt="" />
+                <img src="./images/nfts/34.png" alt="" />
+                <img src="./images/nfts/35.png" alt="" />
+                <img src="./images/nfts/36.png" alt="" />
+                <img src="./images/nfts/37.png" alt="" />
+                <img src="./images/nfts/38.png" alt="" />
+                <img src="./images/nfts/39.png" alt="" />
+                <img src="./images/nfts/40.png" alt="" />
+                <img src="./images/nfts/41.png" alt="" />
+                <img src="./images/nfts/42.png" alt="" />
+                <img src="./images/nfts/43.png" alt="" />
+                <img src="./images/nfts/44.png" alt="" />
+                <img src="./images/nfts/45.png" alt="" />
+                <img src="./images/nfts/46.png" alt="" />
+                <img src="./images/nfts/47.png" alt="" />
+                <img src="./images/nfts/48.png" alt="" />
+                <img src="./images/nfts/49.png" alt="" />
+                <img src="./images/nfts/50.png" alt="" />
+              </div>
+            </Marquee>
+          </article>
         </div>
-      </Marquee>
+      </section>
 
       <section className="road-map-wrapper">
         <h1 className="roadmap-title">ROADMAP</h1>
-        <h1 className="roadmap-subtitle">what we'll do?</h1>
+        <h2 className="roadmap-subtitle">what we'll do?</h2>
         <article className="road-map">
           <div className="step">
             <p className="percentage">10%</p>

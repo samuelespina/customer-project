@@ -14,7 +14,7 @@
 
   .navbar {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(2, auto);
     align-items: end;
     height: 100%;
@@ -49,32 +49,32 @@
       margin: auto;
       position: relative;
       top: -0.8rem;
-      transition: all 0.6s ease-in-out;
+      transition: all 0.5s ease-in-out;
 
       &.link2 {
         background-color: black;
-        transform: translateX(+ calc(100vw / 8));
+        transform: translateX(+ calc(100vw / 7));
       }
 
       &.link3 {
         background-color: green;
-        transform: translateX(calc(100vw / 8) * 2);
+        transform: translateX(calc(100vw / 7) * 2);
       }
       &.link4 {
         background-color: yellow;
-        transform: translateX(calc(100vw / 8) * 3);
+        transform: translateX(calc(100vw / 7) * 3);
       }
       &.link5 {
         background-color: white;
-        transform: translateX(calc(100vw / 8) * 4);
+        transform: translateX(calc(100vw / 7) * 4);
       }
       &.link6 {
         background-color: violet;
-        transform: translateX(calc(100vw / 8) * 5);
+        transform: translateX(calc(100vw / 7) * 5);
       }
       &.link7 {
         background-color: pink;
-        transform: translateX(calc(100vw / 8) * 6);
+        transform: translateX(calc(100vw / 7) * 6);
       }
     }
   }
