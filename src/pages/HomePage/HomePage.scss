@@ -1,8 +1,7 @@
 .homepage {
   height: auto;
-
+  background-color: rgb(22, 22, 22);
   .hero-wrapper {
-    margin-top: 1rem;
     height: auto;
 
     .hero {
@@ -10,10 +9,14 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-radius: 5rem;
-      -webkit-box-shadow: 0px 0px 17px -6px #000000;
-      box-shadow: 0px 0px 17px -6px #000000;
-
+      border-radius: 0 0 5rem 5rem;
+      -webkit-box-shadow: 0px 0px 50px -6px #000000;
+      box-shadow: 0px 0px 50 px -6px #000000;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 166, 0, 1) 0%,
+        rgba(255, 59, 0, 1) 100%
+      );
       .presentation {
         width: 50%;
         height: auto;
@@ -22,6 +25,7 @@
 
       .parallax {
         margin: 2rem 3rem 0 0;
+        z-index: 0;
 
         .parallax_nft1,
         .parallax_nft2,
@@ -31,8 +35,11 @@
           border: 1px solid green;
           position: relative;
           border-radius: 2rem;
-          border: 5px solid white;
+          border: 2px solid black;
           overflow: hidden;
+
+          -webkit-box-shadow: 0px 0px 30px -6px #000000;
+          box-shadow: 0px 0px 30px -6px #000000;
 
           img {
             max-height: 100%;
@@ -68,20 +75,23 @@
     .story-title {
       position: relative;
       top: 4.5rem;
-      z-index: -1;
-      color: red;
-      opacity: 0.7;
+      z-index: 0;
+      opacity: 0.2;
+      color: white;
       scale: 1.6;
     }
     .story-subtitle {
       font-size: 2.5rem;
+      position: relative;
+      z-index: 1;
+      color: white;
 
       &::after {
         content: "";
         width: 5rem;
         height: 0.3rem;
         border-radius: 1rem;
-        background: red;
+        background: orangered;
         display: block;
         position: absolute;
         left: 50%;
@@ -97,8 +107,15 @@
       justify-content: center;
       align-items: center;
       border-radius: 2rem;
-      -webkit-box-shadow: 0px 0px 17px -6px #000000;
-      box-shadow: 0px 0px 17px -6px #000000;
+      -webkit-box-shadow: 0px 0px 50px -6px #000000;
+      box-shadow: 0px 0px 50px -6px #000000;
+      color: black;
+
+      background: radial-gradient(
+        circle at 50% 50%,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(150, 150, 150, 1) 100%
+      );
 
       .nft-hover-container {
         display: flex;
@@ -112,7 +129,7 @@
         .nft-hover2 {
           width: 13rem;
           aspect-ratio: 1/1;
-          border: 5px solid white;
+          border: 2px solid black;
           position: relative;
           border-radius: 2rem;
           transition: all 0.2s ease-in-out;
@@ -122,7 +139,7 @@
         .nft-hover1 {
           transform: rotate(-20deg);
           top: 1rem;
-          left: 2rem;
+          left: 0.5rem;
 
           &:hover {
             scale: 1.1;
@@ -162,6 +179,7 @@
         h1 {
           text-align: center;
           margin-bottom: 3rem;
+          font-size: 3.5rem;
         }
         p {
           margin-left: 3rem;
@@ -172,12 +190,12 @@
 
   .marquee-wrapper {
     margin-top: 10rem;
+
     .marquee-title {
       position: relative;
       top: 4.5rem;
-      z-index: -1;
+      z-index: 0;
       color: red;
-      opacity: 0.7;
       scale: 1.6;
       text-align: center;
     }
@@ -185,13 +203,14 @@
       font-size: 2.5rem;
       text-align: center;
       position: relative;
+      z-index: 1;
 
       &::after {
         content: "";
         width: 7rem;
         height: 0.3rem;
         border-radius: 1rem;
-        background: red;
+        background: black;
         display: block;
         position: absolute;
         left: 50%;
@@ -234,13 +253,15 @@
     .roadmap-title {
       position: relative;
       top: 4.5rem;
-      z-index: -1;
+      z-index: 0;
       color: red;
       opacity: 0.7;
       scale: 1.6;
     }
     .roadmap-subtitle {
       font-size: 2.5rem;
+      position: relative;
+      z-index: 1;
 
       &::after {
         content: "";
@@ -273,6 +294,12 @@
         align-items: center;
         -webkit-box-shadow: 0px 0px 17px -6px #000000;
         box-shadow: 0px 0px 17px -6px #000000;
+        background: radial-gradient(
+          circle at 50% 50%,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(150, 150, 150, 1) 100%
+        );
+        color: black;
 
         .percentage {
           border-right: 1px solid rgb(211, 210, 210);
@@ -301,18 +328,21 @@
     align-items: center;
     width: 90vw;
     height: auto;
-    margin: 10rem auto 10rem auto;
+    margin: 10rem auto 0 auto;
+    padding-bottom: 10rem;
 
     .faq-title {
       position: relative;
       top: 4.5rem;
-      z-index: -1;
+      z-index: 0;
       color: red;
       opacity: 0.7;
       scale: 1.6;
     }
     .faq-subtitle {
       font-size: 2rem;
+      position: relative;
+      z-index: 1;
 
       &::after {
         content: "";
@@ -346,6 +376,14 @@
         -webkit-box-shadow: 0px 0px 17px -6px #000000;
         box-shadow: 0px 0px 17px -6px #000000;
         margin-bottom: 1rem;
+        -webkit-box-shadow: 0px 0px 17px -6px #000000;
+        box-shadow: 0px 0px 17px -6px #000000;
+        background: radial-gradient(
+          circle at 50% 50%,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(150, 150, 150, 1) 100%
+        );
+        color: black;
 
         p {
           margin-left: 2rem;
