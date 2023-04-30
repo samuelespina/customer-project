@@ -94,10 +94,10 @@ const HomePage = () => {
         <article className="story">
           <div className="nft-hover-container">
             <div className="nft-hover1">
-              <img src="./images/nfts/7.png" alt="" />
+              <img src="./images/nfts/49.png" alt="" />
             </div>
             <div className="nft-hover2">
-              <img src="./images/nfts/12.png" alt="" />
+              <img src="./images/nfts/44.png" alt="" />
             </div>
           </div>
           <div className="story-description">
