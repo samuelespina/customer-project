@@ -3,6 +3,7 @@
   background-color: rgb(22, 22, 22);
   .hero-wrapper {
     height: auto;
+    animation: hero-entry 1s ease-in-out;
 
     .hero {
       height: 100vh;
@@ -29,7 +30,7 @@
 
         .parallax_nft1,
         .parallax_nft2,
-        .parallax-nft3 {
+        .parallax_nft3 {
           width: 14rem;
           aspect-ratio: 1/1;
           border: 1px solid green;
@@ -39,6 +40,7 @@
           overflow: hidden;
           -webkit-box-shadow: 0px 0px 50px -6px #000000;
           box-shadow: 0px 0px 50px -6px #000000;
+          transform-origin: 100px 100px;
 
           img {
             max-height: 100%;
@@ -46,8 +48,19 @@
             object-fit: contain;
           }
         }
-        .parallax-nft3 {
+        .parallax_nft1 {
+          animation: pulse 2s ease-in-out infinite;
+        }
+
+        .parallax_nft2 {
+          animation: pulse 2s ease-in-out infinite;
+          animation-delay: 1s;
+        }
+
+        .parallax_nft3 {
           z-index: -1;
+          animation: pulse 2s ease-in-out infinite;
+          animation-delay: 1.5s;
         }
       }
     }
@@ -199,7 +212,7 @@
       position: relative;
       top: 4.5rem;
       z-index: 0;
-      color: red;
+      opacity: 0.2;
       scale: 1.6;
       text-align: center;
     }
@@ -208,13 +221,17 @@
       text-align: center;
       position: relative;
       z-index: 1;
+      background: #c8cf00;
+      background: linear-gradient(to right, #c8cf00 43%, #cf0000 53%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
 
       &::after {
         content: "";
         width: 7rem;
         height: 0.3rem;
         border-radius: 1rem;
-        background: black;
+        background: orangered;
         display: block;
         position: absolute;
         left: 50%;
@@ -223,7 +240,7 @@
     }
     .marquee-background {
       margin-top: 5rem;
-      background-color: rgb(0, 0, 0, 0.8);
+      background-color: rgb(0, 0, 0.9);
 
       -webkit-box-shadow: 0px 0px 70px -6px #000000;
       box-shadow: 0px 0px 70px -6px #000000;
@@ -258,21 +275,24 @@
       position: relative;
       top: 4.5rem;
       z-index: 0;
-      color: red;
-      opacity: 0.7;
+      opacity: 0.2;
       scale: 1.6;
     }
     .roadmap-subtitle {
       font-size: 2.5rem;
       position: relative;
       z-index: 1;
+      background: #c8cf00;
+      background: linear-gradient(to right, #c8cf00 0%, #cf0000 70%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
 
       &::after {
         content: "";
         width: 7rem;
         height: 0.3rem;
         border-radius: 1rem;
-        background: red;
+        background: orangered;
         display: block;
         position: relative;
         left: 50%;
@@ -339,21 +359,24 @@
       position: relative;
       top: 4.5rem;
       z-index: 0;
-      color: red;
-      opacity: 0.7;
+      opacity: 0.2;
       scale: 1.6;
     }
     .faq-subtitle {
       font-size: 2rem;
       position: relative;
       z-index: 1;
+      background: #c8cf00;
+      background: linear-gradient(to right, #c8cf00 0%, #cf0000 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
 
       &::after {
         content: "";
         width: 10rem;
         height: 0.3rem;
         border-radius: 1rem;
-        background: red;
+        background: orangered;
         display: block;
         position: relative;
         left: 50%;
@@ -409,5 +432,29 @@
         }
       }
     }
+  }
+}
+
+@keyframes hero-entry {
+  0% {
+    transform: translateY(-8rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    scale: 1;
+  }
+
+  50% {
+    scale: 1.013;
+  }
+
+  100% {
+    scale: 1;
   }
 }

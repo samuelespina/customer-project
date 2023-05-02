@@ -74,7 +74,7 @@ const HomePage = () => {
             <div ref={parallax_nft2} className="parallax_nft2">
               <img src="./images/nfts/19.png" alt="" />
             </div>
-            <div ref={parallax_nft3} className="parallax-nft3">
+            <div ref={parallax_nft3} className="parallax_nft3">
               <img src="./images/nfts/28.png" alt="" />
             </div>
           </div>

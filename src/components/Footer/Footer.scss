@@ -28,16 +28,25 @@
   }
 
   .join {
+    width: 9rem;
+    height: 3.5rem;
     padding: 0.7rem;
-    font-size: 1rem;
-    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 1.3rem;
     border: none;
     background-color: white;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    background-color: rgba(255, 72, 0, 1);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 0, 0, 1) 0%,
+      rgba(255, 72, 0, 1) 50%,
+      rgba(255, 0, 0, 1) 100%
+    );
 
     &:hover {
-      -webkit-box-shadow: 0px 0px 50px -6px #000000;
-      box-shadow: 0px 0px 50px -6px #000000;
+      transform: translateY(-0.4rem);
+      background-color: red;
     }
   }
 }

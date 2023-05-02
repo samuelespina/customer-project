@@ -40,25 +40,53 @@ const Navbar = () => {
   return (
     <header className="navbar-wrapper">
       <nav className="navbar">
-        <div onClick={() => scrollTo(0, 0)} className="link">
+        <div
+          style={{ animation: "open-transition .4s ease-in-out" }}
+          onClick={() => scrollTo(0, 0)}
+          className="link"
+        >
           Home
         </div>
-        <div onClick={() => scrollTo(0, 552)} className="link">
+        <div
+          style={{ animation: "open-transition .6s ease-in-out" }}
+          onClick={() => scrollTo(0, 552)}
+          className="link"
+        >
           Stats
         </div>
-        <div onClick={() => scrollTo(0, 1001)} className="link">
+        <div
+          style={{ animation: "open-transition .8s ease-in-out" }}
+          onClick={() => scrollTo(0, 1001)}
+          className="link"
+        >
           Story
         </div>
-        <div onClick={() => scrollTo(0, 1902)} className="link">
+        <div
+          style={{ animation: "open-transition 1s ease-in-out" }}
+          onClick={() => scrollTo(0, 1902)}
+          className="link"
+        >
           Showcase
         </div>
-        <div onClick={() => scrollTo(0, 2732)} className="link">
+        <div
+          style={{ animation: "open-transition 1.2s ease-in-out" }}
+          onClick={() => scrollTo(0, 2732)}
+          className="link"
+        >
           Roadmap
         </div>
-        <div onClick={() => scrollTo(0, 3500)} className="link">
+        <div
+          style={{ animation: "open-transition 1.4s ease-in-out" }}
+          onClick={() => scrollTo(0, 3500)}
+          className="link"
+        >
           FAQ
         </div>
-        <div onClick={() => scrollTo(0, 5100)} className="link">
+        <div
+          style={{ animation: "open-transition 1.6s ease-in-out" }}
+          onClick={() => scrollTo(0, 5100)}
+          className="link"
+        >
           Contacts
         </div>
 

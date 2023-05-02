@@ -30,7 +30,7 @@
       border-radius: 1rem;
       &:hover {
         background: #c8cf00;
-        background: linear-gradient(to right, #c8cf00 20%, #cf0000 60%);
+        background: linear-gradient(to right, #c8cf00 30%, #cf0000 60%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         cursor: pointer;
@@ -46,6 +46,7 @@
       position: relative;
       top: -0.8rem;
       transition: all 0.5s ease-in-out;
+      animation: open-transition 0.3s ease-in-out;
 
       &.link2 {
         background-color: rgb(255, 64, 0);
@@ -73,5 +74,15 @@
         transform: translateX(calc(100vw / 7) * 6);
       }
     }
+  }
+}
+
+@keyframes open-transition {
+  0% {
+    transform: translateY(-5rem);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
