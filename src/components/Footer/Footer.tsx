@@ -2,7 +2,12 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer
+      data-aos="fade-up"
+      data-aos-duration="700"
+      data-aos-offset="500"
+      className="footer"
+    >
       <div className="contacts">
         <h2>Join our community</h2>
         <p>We'll be glad to have you with us, see you soon!</p>
