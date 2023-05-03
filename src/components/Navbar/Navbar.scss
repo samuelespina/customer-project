@@ -31,7 +31,7 @@
       &:hover {
         background: #c8cf00;
         background: linear-gradient(to right, #c8cf00 30%, #cf0000 60%);
-        background-clip: text;
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         cursor: pointer;
       }
