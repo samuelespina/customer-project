@@ -3,7 +3,7 @@
   justify-content: space-around;
   align-items: center;
   height: 35vh;
-  border-radius: 2rem 2rem 0 0;
+  border-radius: 5rem 5rem 0 0;
   -webkit-box-shadow: 0px 0px 50px -6px #000000;
   box-shadow: 0px 0px 50px -6px #000000;
   background: linear-gradient(
@@ -33,20 +33,69 @@
     padding: 0.7rem;
     font-size: 1.2rem;
     border-radius: 1.3rem;
-    border: none;
+    border: 3px solid white;
+
+    font-weight: 500;
     background-color: white;
     transition: all 0.2s ease-in-out;
     background-color: rgba(255, 72, 0, 1);
-    background: linear-gradient(
-      180deg,
-      rgba(255, 0, 0, 1) 0%,
-      rgba(255, 72, 0, 1) 50%,
-      rgba(255, 0, 0, 1) 100%
+    background: radial-gradient(
+      circle,
+      rgba(228, 255, 0, 1) 16%,
+      rgba(31, 255, 0, 1) 88%
     );
 
     &:hover {
       transform: translateY(-0.4rem);
       background-color: red;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    .contacts {
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .footer {
+    .contacts {
+      h2 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
+    .join {
+      width: 6rem;
+      font-size: 0.7rem;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .footer {
+    .contacts {
+      h2 {
+        font-size: 1.3rem;
+      }
+      p {
+        font-size: 0.6rem;
+      }
+    }
+    .join {
+      width: 5rem;
+      height: 2.5rem;
+      font-size: 0.5rem;
     }
   }
 }

@@ -49,35 +49,35 @@ const Navbar = () => {
         </div>
         <div
           style={{ animation: "open-transition .6s ease-in-out" }}
-          onClick={() => scrollTo(0, 552)}
+          onClick={() => scrollTo(0, 510)}
           className="link"
         >
           Stats
         </div>
         <div
           style={{ animation: "open-transition .8s ease-in-out" }}
-          onClick={() => scrollTo(0, 1001)}
+          onClick={() => scrollTo(0, 900)}
           className="link"
         >
           Story
         </div>
         <div
           style={{ animation: "open-transition 1s ease-in-out" }}
-          onClick={() => scrollTo(0, 1902)}
+          onClick={() => scrollTo(0, 1800)}
           className="link"
         >
           Showcase
         </div>
         <div
           style={{ animation: "open-transition 1.2s ease-in-out" }}
-          onClick={() => scrollTo(0, 2732)}
+          onClick={() => scrollTo(0, 2700)}
           className="link"
         >
           Roadmap
         </div>
         <div
           style={{ animation: "open-transition 1.4s ease-in-out" }}
-          onClick={() => scrollTo(0, 3500)}
+          onClick={() => scrollTo(0, 3460)}
           className="link"
         >
           FAQ
@@ -88,6 +88,13 @@ const Navbar = () => {
           className="link"
         >
           Contacts
+        </div>
+
+        <div
+          style={{ animation: "open-transition 1.8s ease-in-out" }}
+          className="link discord"
+        >
+          Discord
         </div>
 
         <div className="subline" ref={subline}></div>

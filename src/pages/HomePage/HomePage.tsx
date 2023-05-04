@@ -107,7 +107,7 @@ const HomePage = () => {
           <h2 className="story-subtitle">our story</h2>
         </div>
 
-        <div data-aos="fade-right" data-aos-offset="300">
+        <div data-aos="fade-right" data-aos-offset="200">
           <article className="story">
             <div className="nft-hover-container">
               <div className="nft-hover1">
@@ -163,6 +163,15 @@ const HomePage = () => {
                   <img src="./images/nfts/14.png" alt="" />
                   <img src="./images/nfts/15.png" alt="" />
                   <img src="./images/nfts/16.png" alt="" />
+                </div>
+              </Marquee>
+            </article>
+          </div>
+          <div data-aos="fade-up" data-aos-offset="350">
+            {" "}
+            <article className="marquee">
+              <Marquee direction="right">
+                <div className="marquee-container">
                   <img src="./images/nfts/17.png" alt="" />
                   <img src="./images/nfts/18.png" alt="" />
                   <img src="./images/nfts/19.png" alt="" />
@@ -172,15 +181,6 @@ const HomePage = () => {
                   <img src="./images/nfts/23.png" alt="" />
                   <img src="./images/nfts/24.png" alt="" />
                   <img src="./images/nfts/25.png" alt="" />
-                </div>
-              </Marquee>
-            </article>
-          </div>
-          <div data-aos="fade-up" data-aos-offset="300">
-            {" "}
-            <article className="marquee">
-              <Marquee direction="right">
-                <div className="marquee-container">
                   <img src="./images/nfts/26.png" alt="" />
                   <img src="./images/nfts/27.png" alt="" />
                   <img src="./images/nfts/28.png" alt="" />
@@ -188,6 +188,14 @@ const HomePage = () => {
                   <img src="./images/nfts/30.png" alt="" />
                   <img src="./images/nfts/31.png" alt="" />
                   <img src="./images/nfts/32.png" alt="" />
+                </div>
+              </Marquee>
+            </article>
+          </div>
+          <div data-aos="fade-up" data-aos-offset="400">
+            <article className="marquee">
+              <Marquee>
+                <div className="marquee-container">
                   <img src="./images/nfts/33.png" alt="" />
                   <img src="./images/nfts/34.png" alt="" />
                   <img src="./images/nfts/35.png" alt="" />
@@ -223,31 +231,31 @@ const HomePage = () => {
           <div data-aos="fade-left" data-aos-offset="500" className="step">
             <p className="percentage">10%</p>
             <p className="description">
-              abbkasjdbvkjadsvkjasdkjvkjadsvkjsdvkjsdvkjbasdkjvbsdjkvsosifoi
+              kskdjcienfukdjsdhcnakkskdjcienfukdjsdhcnak
             </p>
           </div>
           <div data-aos="fade-left" data-aos-offset="510" className="step">
             <p className="percentage">25%</p>
             <p className="description">
-              abbkasjdbvkjadsvkjasdkjvkjadsvkjsdvkjsdvkjbasdkjvbsdjkvsosifoi
+              kskdjcienfukdjsdhcnakkskdjcienfukdjsdhcnak
             </p>
           </div>
           <div data-aos="fade-left" data-aos-offset="520" className="step">
             <p className="percentage">50%</p>
             <p className="description">
-              abbkasjdbvkjadsvkjasdkjvkjadsvkjsdvkjsdvkjbasdkjvbsdjkvsosifoi
+              kskdjcienfukdjsdhcnakkskdjcienfukdjsdhcnak
             </p>
           </div>
           <div data-aos="fade-left" data-aos-offset="530" className="step">
             <p className="percentage">75%</p>
             <p className="description">
-              abbkasjdbvkjadsvkjasdkjvkjadsvkjsdvkjsdvkjbasdkjvbsdjkvsosifoi
+              kskdjcienfukdjsdhcnakkskdjcienfukdjsdhcnak
             </p>
           </div>
           <div data-aos="fade-left" data-aos-offset="540" className="step">
             <p className="percentage last">100%</p>
             <p className="description">
-              abbkasjdbvkjadsvkjasdkjvkjadsvkjsdvkjsdvkjbasdkjvbsdjkvsosifoi
+              kskdjcienfukdjsdhcnakkskdjcienfukdjsdhcnak
             </p>
           </div>
         </article>
@@ -275,7 +283,6 @@ const HomePage = () => {
               <FontAwesomeIcon icon={faChevronUp} />
               What is Blue Chipmunks NFT?
             </p>
-            <br />
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
               culpa vel architecto maxime inventore, expedita, amet quo tempore
@@ -297,7 +304,6 @@ const HomePage = () => {
               <FontAwesomeIcon icon={faChevronUp} />
               How Can I Use My NFT ?
             </p>
-            <br />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
               accusamus perferendis vitae, rerum quos consectetur doloribus
@@ -320,7 +326,6 @@ const HomePage = () => {
               <FontAwesomeIcon icon={faChevronUp} />
               Where can I View My NFTS ?
             </p>
-            <br />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Cupiditate, iure placeat eligendi blanditiis reprehenderit quidem
@@ -343,7 +348,6 @@ const HomePage = () => {
               <FontAwesomeIcon icon={faChevronUp} />
               How we can buy and invest NFT ?
             </p>
-            <br />
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Voluptatum provident eius quidem saepe deleniti blanditiis fugiat
@@ -366,7 +370,6 @@ const HomePage = () => {
               <FontAwesomeIcon icon={faChevronUp} />
               Where we can buy and sell NFts?
             </p>
-            <br />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
               omnis eligendi harum eum facilis unde repellendus dolores incidunt
@@ -389,7 +392,6 @@ const HomePage = () => {
               <FontAwesomeIcon icon={faChevronUp} />
               Where does my NFT go after I purchase?
             </p>
-            <br />
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
               earum numquam aliquid quasi magnam ipsum nisi, minima modi

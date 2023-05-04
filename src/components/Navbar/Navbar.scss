@@ -17,7 +17,7 @@
 
   .navbar {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(2, auto);
     align-items: end;
     height: 100%;
@@ -35,6 +35,12 @@
         -webkit-text-fill-color: transparent;
         cursor: pointer;
       }
+      &.discord:hover {
+        background: #c8cf00;
+        background: linear-gradient(to right, #c8cf00 35%, #1bcf15 60%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     }
 
     .subline {
@@ -50,28 +56,28 @@
 
       &.link2 {
         background-color: rgb(255, 64, 0);
-        transform: translateX(+ calc(100vw / 7));
+        transform: translateX(+ calc(100vw / 8));
       }
 
       &.link3 {
         background-color: rgb(255, 149, 0);
-        transform: translateX(calc(100vw / 7) * 2);
+        transform: translateX(calc(100vw / 8) * 2);
       }
       &.link4 {
         background-color: yellow;
-        transform: translateX(calc(100vw / 7) * 3);
+        transform: translateX(calc(100vw / 8) * 3);
       }
       &.link5 {
         background-color: rgb(255, 149, 0);
-        transform: translateX(calc(100vw / 7) * 4);
+        transform: translateX(calc(100vw / 8) * 4);
       }
       &.link6 {
         background-color: rgb(255, 64, 0);
-        transform: translateX(calc(100vw / 7) * 5);
+        transform: translateX(calc(100vw / 8) * 5);
       }
       &.link7 {
         background-color: red;
-        transform: translateX(calc(100vw / 7) * 6);
+        transform: translateX(calc(100vw / 8) * 6);
       }
     }
   }
@@ -84,5 +90,40 @@
 
   100% {
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-wrapper {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .navbar-wrapper {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .navbar-wrapper {
+    font-size: 0.7rem;
+    .navbar {
+      .subline {
+        width: 2rem;
+        height: 0.15rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .navbar-wrapper {
+    font-size: 0.5rem;
+    .navbar {
+      .subline {
+        width: 1.5rem;
+        height: 0.15rem;
+      }
+    }
   }
 }
