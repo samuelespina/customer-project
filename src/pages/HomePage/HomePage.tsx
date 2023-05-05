@@ -17,6 +17,17 @@ const HomePage = () => {
   const faq_4 = useRef<HTMLInputElement>(null);
   const faq_5 = useRef<HTMLInputElement>(null);
   const faq_6 = useRef<HTMLInputElement>(null);
+  const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
+
+  useEffect(() => {
+    console.log(screenWidth);
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setScreenWidth(window.innerWidth);
+    });
+  }, []);
 
   useEffect(() => {
     document.addEventListener("mousemove", (e) => {
@@ -58,6 +69,7 @@ const HomePage = () => {
       <section className="hero-wrapper">
         <article className="hero">
           <div className="presentation">
+            {screenWidth < 425 ? <p>mobile</p> : <p>desktop</p>}
             <h1>TITLE</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <p> Ex laudantium commodi iste autem nam vitae soluta.</p>
@@ -169,7 +181,7 @@ const HomePage = () => {
           </div>
           <div
             data-aos="fade-up"
-            data-aos-offset={window.innerWidth < 425 ? 150 : 350}
+            data-aos-offset={screenWidth < 425 ? 150 : 350}
           >
             {" "}
             <article className="marquee">
@@ -197,7 +209,7 @@ const HomePage = () => {
           </div>
           <div
             data-aos="fade-up"
-            data-aos-offset={window.innerWidth < 425 ? 150 : 480}
+            data-aos-offset={screenWidth < 425 ? 150 : 480}
           >
             <article className="marquee">
               <Marquee>
@@ -228,10 +240,7 @@ const HomePage = () => {
       </section>
 
       <section className="road-map-wrapper">
-        <div
-          data-aos="fade-up"
-          data-aos-offset={window.innerWidth < 425 ? 200 : 550}
-        >
+        <div data-aos="fade-up" data-aos-offset={screenWidth < 425 ? 200 : 550}>
           <h1 className="roadmap-title">ROADMAP</h1>
           <h2 className="roadmap-subtitle">what we'll do?</h2>
         </div>
@@ -239,7 +248,7 @@ const HomePage = () => {
         <article className="road-map">
           <div
             data-aos="fade-left"
-            data-aos-offset={window.innerWidth < 425 ? 200 : 500}
+            data-aos-offset={screenWidth < 425 ? 200 : 500}
             className="step"
           >
             <p className="percentage">10%</p>
@@ -249,7 +258,7 @@ const HomePage = () => {
           </div>
           <div
             data-aos="fade-left"
-            data-aos-offset={window.innerWidth < 425 ? 200 : 510}
+            data-aos-offset={screenWidth < 425 ? 200 : 510}
             className="step"
           >
             <p className="percentage">25%</p>
@@ -259,7 +268,7 @@ const HomePage = () => {
           </div>
           <div
             data-aos="fade-left"
-            data-aos-offset={window.innerWidth < 425 ? 200 : 520}
+            data-aos-offset={screenWidth < 425 ? 200 : 520}
             className="step"
           >
             <p className="percentage">50%</p>
@@ -269,7 +278,7 @@ const HomePage = () => {
           </div>
           <div
             data-aos="fade-left"
-            data-aos-offset={window.innerWidth < 425 ? 200 : 530}
+            data-aos-offset={screenWidth < 425 ? 200 : 530}
             className="step"
           >
             <p className="percentage">75%</p>
@@ -279,7 +288,7 @@ const HomePage = () => {
           </div>
           <div
             data-aos="fade-left"
-            data-aos-offset={window.innerWidth < 425 ? 200 : 540}
+            data-aos-offset={screenWidth < 425 ? 200 : 540}
             className="step"
           >
             <p className="percentage last">100%</p>
@@ -291,10 +300,7 @@ const HomePage = () => {
       </section>
 
       <section className="faq-wrapper">
-        <div
-          data-aos="fade-up"
-          data-aos-offset={window.innerWidth < 425 ? 150 : 550}
-        >
+        <div data-aos="fade-up" data-aos-offset={screenWidth < 425 ? 150 : 550}>
           <h1 className="faq-title">QUESTIONS</h1>
           <h2 className="faq-subtitle">Frequently Asked Questions</h2>
         </div>
@@ -309,7 +315,7 @@ const HomePage = () => {
             }}
             className="question-box"
             data-aos="fade-left"
-            data-aos-offset={window.innerWidth < 425 ? 150 : 550}
+            data-aos-offset={screenWidth < 425 ? 150 : 550}
           >
             <p>
               <FontAwesomeIcon icon={faChevronUp} />
@@ -330,7 +336,7 @@ const HomePage = () => {
             }}
             className="question-box"
             data-aos="fade-right"
-            data-aos-offset={window.innerWidth < 425 ? 150 : 560}
+            data-aos-offset={screenWidth < 425 ? 150 : 560}
           >
             <p>
               <FontAwesomeIcon icon={faChevronUp} />
@@ -352,7 +358,7 @@ const HomePage = () => {
             }}
             className="question-box"
             data-aos="fade-left"
-            data-aos-offset={window.innerWidth < 425 ? 150 : 570}
+            data-aos-offset={screenWidth < 425 ? 150 : 570}
           >
             <p>
               <FontAwesomeIcon icon={faChevronUp} />
@@ -374,7 +380,7 @@ const HomePage = () => {
             }}
             className="question-box"
             data-aos="fade-right"
-            data-aos-offset={window.innerWidth < 425 ? 130 : 580}
+            data-aos-offset={screenWidth < 425 ? 130 : 580}
           >
             <p>
               <FontAwesomeIcon icon={faChevronUp} />
@@ -396,7 +402,7 @@ const HomePage = () => {
             }}
             className="question-box"
             data-aos="fade-left"
-            data-aos-offset={window.innerWidth < 425 ? 130 : 590}
+            data-aos-offset={screenWidth < 425 ? 130 : 590}
           >
             <p>
               <FontAwesomeIcon icon={faChevronUp} />
@@ -418,7 +424,7 @@ const HomePage = () => {
             }}
             className="question-box"
             data-aos="fade-right"
-            data-aos-offset={window.innerWidth < 425 ? 130 : 600}
+            data-aos-offset={screenWidth < 425 ? 130 : 600}
           >
             <p>
               <FontAwesomeIcon icon={faChevronUp} />

@@ -9,6 +9,9 @@ const Navbar = () => {
       setScrollValue(window.pageYOffset);
     });
   }, []);
+  useEffect(() => {
+    console.log(scrollValue);
+  }, [scrollValue]);
 
   useEffect(() => {
     if (subline.current) {
