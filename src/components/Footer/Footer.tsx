@@ -5,7 +5,7 @@ const Footer = () => {
     <footer
       data-aos="fade-up"
       data-aos-duration="700"
-      data-aos-offset={window.innerWidth < 425 ? 50 : 500}
+      data-aos-offset={window.innerWidth < 425 ? 120 : 500}
       className="footer"
     >
       <div className="contacts">
