@@ -16,6 +16,7 @@ html {
   scroll-behavior: smooth;
   background-color: rgb(36, 36, 36);
   main {
+    overflow-x: hidden;
     color: white;
     line-height: 2.5rem;
     h1 {
