@@ -33,20 +33,17 @@
         .parallax_nft2,
         .parallax_nft3 {
           width: 14rem;
+
           aspect-ratio: 1/1;
-          border: 1px solid green;
           position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           border-radius: 2rem;
           border: 2px solid black;
           overflow: hidden;
           -webkit-box-shadow: 0px 0px 50px -6px #000000;
           box-shadow: 0px 0px 50px -6px #000000;
-
-          img {
-            max-height: 100%;
-            max-width: 100%;
-            object-fit: contain;
-          }
         }
 
         .parallax_nft3 {

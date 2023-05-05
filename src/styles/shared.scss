@@ -6,11 +6,14 @@
 }
 
 img {
-  max-height: 100%;
   max-width: 100%;
-  object-fit: contain;
-  display: block;
+  max-height: 100%;
+  object-fit: cover;
   line-height: 0;
+  display: table-cell;
+  vertical-align: bottom;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 html {

@@ -7,7 +7,6 @@ const Navbar = () => {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setScrollValue(window.pageYOffset);
-      console.log(window.pageYOffset);
     });
   }, []);
 
