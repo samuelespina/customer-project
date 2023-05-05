@@ -167,7 +167,10 @@ const HomePage = () => {
               </Marquee>
             </article>
           </div>
-          <div data-aos="fade-up" data-aos-offset="350">
+          <div
+            data-aos="fade-up"
+            data-aos-offset={window.innerWidth < 425 ? 150 : 350}
+          >
             {" "}
             <article className="marquee">
               <Marquee direction="right">
@@ -192,7 +195,10 @@ const HomePage = () => {
               </Marquee>
             </article>
           </div>
-          <div data-aos="fade-up" data-aos-offset="400">
+          <div
+            data-aos="fade-up"
+            data-aos-offset={window.innerWidth < 425 ? 150 : 480}
+          >
             <article className="marquee">
               <Marquee>
                 <div className="marquee-container">
@@ -222,37 +228,60 @@ const HomePage = () => {
       </section>
 
       <section className="road-map-wrapper">
-        <div data-aos="fade-up" data-aos-offset="550">
+        <div
+          data-aos="fade-up"
+          data-aos-offset={window.innerWidth < 425 ? 200 : 550}
+        >
           <h1 className="roadmap-title">ROADMAP</h1>
           <h2 className="roadmap-subtitle">what we'll do?</h2>
         </div>
 
         <article className="road-map">
-          <div data-aos="fade-left" data-aos-offset="500" className="step">
+          <div
+            data-aos="fade-left"
+            data-aos-offset={window.innerWidth < 425 ? 200 : 500}
+            className="step"
+          >
             <p className="percentage">10%</p>
             <p className="description">
               kskdjcienfukdjsdhcnakkskdjcienfukdjsdhcnak
             </p>
           </div>
-          <div data-aos="fade-left" data-aos-offset="510" className="step">
+          <div
+            data-aos="fade-left"
+            data-aos-offset={window.innerWidth < 425 ? 200 : 510}
+            className="step"
+          >
             <p className="percentage">25%</p>
             <p className="description">
               kskdjcienfukdjsdhcnakkskdjcienfukdjsdhcnak
             </p>
           </div>
-          <div data-aos="fade-left" data-aos-offset="520" className="step">
+          <div
+            data-aos="fade-left"
+            data-aos-offset={window.innerWidth < 425 ? 200 : 520}
+            className="step"
+          >
             <p className="percentage">50%</p>
             <p className="description">
               kskdjcienfukdjsdhcnakkskdjcienfukdjsdhcnak
             </p>
           </div>
-          <div data-aos="fade-left" data-aos-offset="530" className="step">
+          <div
+            data-aos="fade-left"
+            data-aos-offset={window.innerWidth < 425 ? 200 : 530}
+            className="step"
+          >
             <p className="percentage">75%</p>
             <p className="description">
               kskdjcienfukdjsdhcnakkskdjcienfukdjsdhcnak
             </p>
           </div>
-          <div data-aos="fade-left" data-aos-offset="540" className="step">
+          <div
+            data-aos="fade-left"
+            data-aos-offset={window.innerWidth < 425 ? 200 : 540}
+            className="step"
+          >
             <p className="percentage last">100%</p>
             <p className="description">
               kskdjcienfukdjsdhcnakkskdjcienfukdjsdhcnak
@@ -262,7 +291,10 @@ const HomePage = () => {
       </section>
 
       <section className="faq-wrapper">
-        <div data-aos="fade-up" data-aos-offset="600">
+        <div
+          data-aos="fade-up"
+          data-aos-offset={window.innerWidth < 425 ? 150 : 550}
+        >
           <h1 className="faq-title">QUESTIONS</h1>
           <h2 className="faq-subtitle">Frequently Asked Questions</h2>
         </div>
@@ -277,7 +309,7 @@ const HomePage = () => {
             }}
             className="question-box"
             data-aos="fade-left"
-            data-aos-offset="550"
+            data-aos-offset={window.innerWidth < 425 ? 150 : 550}
           >
             <p>
               <FontAwesomeIcon icon={faChevronUp} />
@@ -298,7 +330,7 @@ const HomePage = () => {
             }}
             className="question-box"
             data-aos="fade-right"
-            data-aos-offset="560"
+            data-aos-offset={window.innerWidth < 425 ? 150 : 560}
           >
             <p>
               <FontAwesomeIcon icon={faChevronUp} />
@@ -320,7 +352,7 @@ const HomePage = () => {
             }}
             className="question-box"
             data-aos="fade-left"
-            data-aos-offset="570"
+            data-aos-offset={window.innerWidth < 425 ? 150 : 570}
           >
             <p>
               <FontAwesomeIcon icon={faChevronUp} />
@@ -342,7 +374,7 @@ const HomePage = () => {
             }}
             className="question-box"
             data-aos="fade-right"
-            data-aos-offset="580"
+            data-aos-offset={window.innerWidth < 425 ? 130 : 580}
           >
             <p>
               <FontAwesomeIcon icon={faChevronUp} />
@@ -364,7 +396,7 @@ const HomePage = () => {
             }}
             className="question-box"
             data-aos="fade-left"
-            data-aos-offset="590"
+            data-aos-offset={window.innerWidth < 425 ? 130 : 590}
           >
             <p>
               <FontAwesomeIcon icon={faChevronUp} />
@@ -386,7 +418,7 @@ const HomePage = () => {
             }}
             className="question-box"
             data-aos="fade-right"
-            data-aos-offset="600"
+            data-aos-offset={window.innerWidth < 425 ? 130 : 600}
           >
             <p>
               <FontAwesomeIcon icon={faChevronUp} />
