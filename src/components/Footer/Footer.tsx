@@ -3,6 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer
+      id="footer"
       data-aos="fade-up"
       data-aos-duration="700"
       data-aos-offset={window.innerWidth < 425 ? 120 : 500}

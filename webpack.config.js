@@ -19,15 +19,22 @@ module.exports = {
         test: /\.(s(a|c)ss)$/,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        loader: "file-loader",
+      },
     ],
   },
-  resolve: { extensions: [".tsx", ".ts", ".js"] },
+  resolve: { extensions: [".tsx", ".ts", ".js", ".otf"] },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./public/index.html",
     }),
     new CopyPlugin({
-      patterns: [{ from: "./src/images", to: "./images" }],
+      patterns: [
+        { from: "./src/images", to: "./images" },
+        { from: "./src/fonts", to: "./fonts" },
+      ],
     }),
   ],
 };

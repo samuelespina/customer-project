@@ -66,10 +66,11 @@ const HomePage = () => {
 
   return (
     <div className="homepage">
+      <p id="anchor-one" className="anchor one"></p>
       <section className="hero-wrapper">
         <article className="hero">
           <div className="presentation">
-            {screenWidth < 425 ? <p>mobile</p> : <p>desktop</p>}
+            {/* {screenWidth < 425 ? <p>mobile</p> : <p>desktop</p>} */}
             <h1>TITLE</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <p> Ex laudantium commodi iste autem nam vitae soluta.</p>
@@ -92,6 +93,7 @@ const HomePage = () => {
           </div>
         </article>
       </section>
+      <p id="anchor-two" className="anchor two"></p>
       <section className="stats-wrapper">
         <article className="stats">
           <div data-aos="fade-right">
@@ -113,6 +115,7 @@ const HomePage = () => {
           </div>
         </article>
       </section>
+      <p id="anchor-three" className="anchor three"></p>
       <section className="story-wrapper">
         <div data-aos="fade-up">
           <h1 className="story-title">ABOUT US</h1>
@@ -148,7 +151,7 @@ const HomePage = () => {
           </article>
         </div>
       </section>
-
+      <p id="anchor-four" className="anchor four"></p>
       <section className="marquee-wrapper">
         <div data-aos="fade-up">
           <h1 className="marquee-title">SHOWCASE</h1>
@@ -181,7 +184,7 @@ const HomePage = () => {
           </div>
           <div
             data-aos="fade-up"
-            data-aos-offset={screenWidth < 425 ? 150 : 350}
+            data-aos-offset={screenWidth < 425 ? 150 : 320}
           >
             {" "}
             <article className="marquee">
@@ -209,7 +212,7 @@ const HomePage = () => {
           </div>
           <div
             data-aos="fade-up"
-            data-aos-offset={screenWidth < 425 ? 150 : 480}
+            data-aos-offset={screenWidth < 425 ? 150 : 460}
           >
             <article className="marquee">
               <Marquee>
@@ -238,7 +241,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-
+      <p id="anchor-five" className="anchor five"></p>
       <section className="road-map-wrapper">
         <div data-aos="fade-up" data-aos-offset={screenWidth < 425 ? 200 : 550}>
           <h1 className="roadmap-title">ROADMAP</h1>
@@ -298,7 +301,7 @@ const HomePage = () => {
           </div>
         </article>
       </section>
-
+      <p id="anchor-six" className="anchor six"></p>
       <section className="faq-wrapper">
         <div data-aos="fade-up" data-aos-offset={screenWidth < 425 ? 150 : 550}>
           <h1 className="faq-title">QUESTIONS</h1>

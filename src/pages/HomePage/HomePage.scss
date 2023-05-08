@@ -1,6 +1,17 @@
 .homepage {
   height: auto;
   background-color: rgb(36, 36, 36);
+
+  .anchor {
+    position: relative;
+    top: 6rem;
+    &.two {
+      top: -5rem;
+    }
+    &.one {
+      position: static;
+    }
+  }
   .hero-wrapper {
     height: auto;
     animation: hero-entry 1s ease-in-out;

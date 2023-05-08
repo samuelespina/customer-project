@@ -42,62 +42,62 @@ const Navbar = () => {
   return (
     <header className="navbar-wrapper">
       <nav className="navbar">
-        <div
+        <a
           style={{ animation: "open-transition .4s ease-in-out" }}
-          onClick={() => scrollTo(0, 0)}
+          href="#anchor-one"
           className="link"
         >
           Home
-        </div>
-        <div
+        </a>
+        <a
           style={{ animation: "open-transition .6s ease-in-out" }}
-          onClick={() => scrollTo(0, 510)}
+          href="#anchor-two"
           className="link"
         >
           Stats
-        </div>
-        <div
+        </a>
+        <a
           style={{ animation: "open-transition .8s ease-in-out" }}
-          onClick={() => scrollTo(0, 900)}
+          href="#anchor-three"
           className="link"
         >
           Story
-        </div>
-        <div
+        </a>
+        <a
           style={{ animation: "open-transition 1s ease-in-out" }}
-          onClick={() => scrollTo(0, 1800)}
+          href="#anchor-four"
           className="link"
         >
           Showcase
-        </div>
-        <div
+        </a>
+        <a
           style={{ animation: "open-transition 1.2s ease-in-out" }}
-          onClick={() => scrollTo(0, 2700)}
+          href="#anchor-five"
           className="link"
         >
           Roadmap
-        </div>
-        <div
+        </a>
+        <a
           style={{ animation: "open-transition 1.4s ease-in-out" }}
-          onClick={() => scrollTo(0, 3460)}
+          href="#anchor-six"
           className="link"
         >
           FAQ
-        </div>
-        <div
+        </a>
+        <a
           style={{ animation: "open-transition 1.6s ease-in-out" }}
-          onClick={() => scrollTo(0, 5100)}
+          href="#footer"
           className="link"
         >
           Contacts
-        </div>
+        </a>
 
-        <div
+        <a
           style={{ animation: "open-transition 1.8s ease-in-out" }}
           className="link discord"
         >
           Discord
-        </div>
+        </a>
 
         <div className="subline" ref={subline}></div>
       </nav>
